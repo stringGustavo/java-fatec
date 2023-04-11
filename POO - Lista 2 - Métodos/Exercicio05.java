@@ -12,7 +12,6 @@ public class Exercicio05 {
 	}
 	
 	static void calculoDelta() {
-			
 		double a, b, c, delta;
 		Scanner scan = new Scanner(System.in);
 		
@@ -30,16 +29,13 @@ public class Exercicio05 {
 		System.out.printf("\nDelta: %.0f", delta);
 		
 		if(delta < 0) {
-			
 			System.out.print("\nDelta Negativo, Sem raizes reais!");
-		} else {
-			
+		} else {	
 			calculoRaizes(delta, a, b);
 		}
 	}
 	
 	static void calculoRaizes(double delta, double a, double b) {
-
 		double x1 = (-b + Math.sqrt(delta)) / (2 * a);
 		double x2 = (-b - Math.sqrt(delta)) / (2 * a);
 		
